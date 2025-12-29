@@ -1,0 +1,347 @@
+company:
+  id: 1001
+  name: TechCorp Industries
+  founded: 2015
+  headquarters:
+    address:
+      street: 123 Innovation Drive
+      city: San Francisco
+      state: CA
+      zip: "94105"
+      country: USA
+      coordinates:
+        latitude: 37.7749
+        longitude: -122.4194
+        elevation:
+          meters: 16
+          feet: 52
+    contact:
+      phone:
+        main: +1-415-555-0100
+        fax: +1-415-555-0101
+        emergency: +1-415-555-0199
+      email:
+        general: info@techcorp.com
+        support: support@techcorp.com
+        sales: sales@techcorp.com
+  departments[2]:
+    - id: 1
+      name: Engineering
+      budget: 5000000
+      head:
+        id: 501
+        name: Alice Johnson
+        credentials:
+          education:
+            degree: PhD
+            field: Computer Science
+            university: MIT
+            year: 2010
+          certifications[2]:
+            - name: AWS Solutions Architect
+              level: Professional
+              issued: 2020-05-15
+              expires: 2026-05-15
+            - name: PMP
+              issued: 2018-03-20
+              expires: 2027-03-20
+      teams[2]:
+        - id: 101
+          name: Backend
+          members[2]:
+            - id: 1001
+              name: John Doe
+              role: Senior Engineer
+              skills[3]: Python,Go,Docker
+              performance:
+                "2023":
+                  rating: 4.5
+                  projects_completed: 12
+                  bugs_fixed: 234
+                  reviews:
+                    peer: 4.6
+                    manager: 4.4
+                    self: 4.3
+                "2024":
+                  rating: 4.7
+                  projects_completed: 15
+                  bugs_fixed: 189
+                  reviews:
+                    peer: 4.8
+                    manager: 4.6
+                    self: 4.5
+            - id: 1002
+              name: Jane Smith
+              role: Tech Lead
+              skills[3]: Java,Kubernetes,PostgreSQL
+              performance:
+                "2023":
+                  rating: 4.8
+                  projects_completed: 10
+                  bugs_fixed: 156
+                  reviews:
+                    peer: 4.9
+                    manager: 4.7
+                    self: 4.6
+                "2024":
+                  rating: 4.9
+                  projects_completed: 11
+                  bugs_fixed: 142
+                  reviews:
+                    peer: 5
+                    manager: 4.8
+                    self: 4.7
+        - id: 102
+          name: Frontend
+          members[1]:
+            - id: 1003
+              name: Mike Wilson
+              role: UI/UX Engineer
+              skills[3]: React,TypeScript,Figma
+              performance:
+                "2023":
+                  rating: 4.3
+                  projects_completed: 18
+                  bugs_fixed: 267
+                  reviews:
+                    peer: 4.4
+                    manager: 4.2
+                    self: 4.1
+                "2024":
+                  rating: 4.6
+                  projects_completed: 20
+                  bugs_fixed: 198
+                  reviews:
+                    peer: 4.7
+                    manager: 4.5
+                    self: 4.4
+    - id: 2
+      name: Marketing
+      budget: 2000000
+      head:
+        id: 502
+        name: Bob Smith
+        credentials:
+          education:
+            degree: MBA
+            field: Marketing
+            university: Harvard
+            year: 2012
+          certifications[1]{name,level,issued,expires}:
+            Google Analytics,Advanced,2021-08-10,2025-08-10
+      campaigns[1]:
+        - id: 2001
+          name: Q4 Product Launch
+          budget: 500000
+          timeline:
+            start: 2024-10-01
+            end: 2024-12-31
+            milestones[3]:
+              - name: Creative Development
+                date: 2024-10-15
+                status: completed
+                deliverables[3]: Brand guidelines,Ad creatives,Video assets
+              - name: Media Buy
+                date: 2024-11-01
+                status: completed
+                channels:
+                  digital:
+                    platforms[3]: Google Ads,Facebook,LinkedIn
+                    budget: 200000
+                    impressions: 5000000
+                  traditional:
+                    platforms[3]: TV,Radio,Print
+                    budget: 150000
+                    reach: 2000000
+              - name: Campaign Launch
+                date: 2024-11-15
+                status: in_progress
+                metrics:
+                  week1:
+                    impressions: 1200000
+                    clicks: 48000
+                    conversions: 2400
+                    ctr: 4
+                    conversion_rate: 5
+                  week2:
+                    impressions: 1500000
+                    clicks: 60000
+                    conversions: 3300
+                    ctr: 4
+                    conversion_rate: 5.5
+  products[1]:
+    - id: 5001
+      name: CloudSync Pro
+      category: SaaS
+      pricing:
+        tiers[3]:
+          - name: Starter
+            price:
+              monthly: 29
+              yearly: 290
+              currency: USD
+            features:
+              storage: 100GB
+              users: 5
+              api_calls: 10000
+              support: Email
+            limits:
+              uploads_per_day: 1000
+              downloads_per_day: 5000
+              bandwidth: 100GB
+          - name: Professional
+            price:
+              monthly: 99
+              yearly: 990
+              currency: USD
+            features:
+              storage: 1TB
+              users: 25
+              api_calls: 100000
+              support: Priority
+            limits:
+              uploads_per_day: 10000
+              downloads_per_day: 50000
+              bandwidth: 1TB
+          - name: Enterprise
+            price:
+              monthly: 499
+              yearly: 4990
+              currency: USD
+            features:
+              storage: Unlimited
+              users: Unlimited
+              api_calls: Unlimited
+              support: 24/7 Dedicated
+            limits:
+              uploads_per_day: Unlimited
+              downloads_per_day: Unlimited
+              bandwidth: Unlimited
+      analytics:
+        usage:
+          "2024":
+            q1:
+              active_users: 15000
+              new_signups: 3500
+              churn_rate: 2.5
+              revenue: 450000
+              breakdown:
+                by_tier:
+                  starter:
+                    users: 10000
+                    revenue: 290000
+                  professional:
+                    users: 4000
+                    revenue: 396000
+                  enterprise:
+                    users: 1000
+                    revenue: 499000
+                by_region:
+                  north_america:
+                    users: 8000
+                    revenue: 620000
+                  europe:
+                    users: 5000
+                    revenue: 380000
+                  asia:
+                    users: 2000
+                    revenue: 185000
+            q2:
+              active_users: 18500
+              new_signups: 4200
+              churn_rate: 2.1
+              revenue: 565000
+              breakdown:
+                by_tier:
+                  starter:
+                    users: 12000
+                    revenue: 348000
+                  professional:
+                    users: 5000
+                    revenue: 495000
+                  enterprise:
+                    users: 1500
+                    revenue: 748500
+                by_region:
+                  north_america:
+                    users: 9500
+                    revenue: 750000
+                  europe:
+                    users: 6500
+                    revenue: 520000
+                  asia:
+                    users: 2500
+                    revenue: 321500
+  infrastructure:
+    cloud:
+      providers[1]:
+        - name: AWS
+          regions[1]:
+            - name: us-west-2
+              primary: true
+              services:
+                compute:
+                  ec2:
+                    instances[2]:
+                      - type: t3.large
+                        count: 50
+                        cost_per_hour: 0.0832
+                        monthly_cost: 2995.2
+                        utilization:
+                          cpu: 65
+                          memory: 70
+                          network: 45
+                      - type: m5.xlarge
+                        count: 30
+                        cost_per_hour: 0.192
+                        monthly_cost: 4147.2
+                        utilization:
+                          cpu: 75
+                          memory: 80
+                          network: 60
+                  lambda:
+                    functions: 120
+                    invocations_per_month: 50000000
+                    avg_duration_ms: 150
+                    monthly_cost: 2500
+                storage:
+                  s3:
+                    buckets: 45
+                    total_size_tb: 250
+                    requests_per_month: 100000000
+                    monthly_cost: 5750
+                    breakdown:
+                      standard:
+                        size_tb: 150
+                        cost: 3450
+                      glacier:
+                        size_tb: 100
+                        cost: 400
+                  ebs:
+                    volumes: 200
+                    total_size_tb: 50
+                    monthly_cost: 5000
+                database:
+                  rds:
+                    instances[1]:
+                      - engine: PostgreSQL
+                        version: "15.2"
+                        type: db.r5.2xlarge
+                        storage_gb: 1000
+                        multi_az: true
+                        replicas: 2
+                        monthly_cost: 1200
+                        performance:
+                          connections:
+                            max: 1000
+                            avg: 450
+                            peak: 850
+                          transactions_per_second:
+                            avg: 2500
+                            peak: 5000
+                  dynamodb:
+                    tables: 25
+                    read_capacity: 5000
+                    write_capacity: 2000
+                    storage_gb: 500
+                    monthly_cost: 800
